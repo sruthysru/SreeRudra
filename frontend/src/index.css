@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+@layer base {
+  body {
+    background-color: #0A0807;
+    color: #E7E5E4;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
