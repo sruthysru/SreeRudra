@@ -176,7 +176,7 @@ function Storefront() {
           <div className="relative flex justify-center">
             <div className="relative w-full max-w-md aspect-square rounded-2xl p-1 bg-gradient-to-tr from-[#B28230]/40 via-[#D97745]/20 to-transparent">
               <div className="w-full h-full rounded-2xl overflow-hidden bg-[#1C1814] relative group">
-                <img src="./assets/Hakik-Black-Agate.png" alt="Sreerudra Sacred Bracelet" className="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out" />
+                <img src="/images/Hakik-Black-Agate.png" alt="Sreerudra Sacred Bracelet" className="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#120F0D] via-transparent to-transparent opacity-80"></div>
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#120F0D]/80 backdrop-blur-md border border-[#C59A45]/30">
                   <span className="text-xs text-[#C59A45] uppercase tracking-widest block font-medium">Signature Creation</span>
@@ -236,8 +236,8 @@ function Storefront() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <img src="./assets/Golden-Hamatite.jpeg" alt="Sacred Beads" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full shadow-lg" />
-              <img src="./assets/Lava-Stone.jpeg" alt="Jewelry Design" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full mt-8 shadow-lg" />
+              <img src="/images/Golden-Hamatite.jpeg" alt="Sacred Beads" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full shadow-lg" />
+              <img src="/images/Lava-Stone.jpeg" alt="Jewelry Design" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full mt-8 shadow-lg" />
             </div>
           </div>
         </div>
