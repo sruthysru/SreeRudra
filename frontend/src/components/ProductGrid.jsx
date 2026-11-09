@@ -11,7 +11,7 @@ export default function ProductGrid({ onAddToCart }) {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await API.get('/products');
+        const res = await API.get('/api/products');
         setProducts(res.data);
       } catch (err) {
         console.error('Failed to fetch products', err);
