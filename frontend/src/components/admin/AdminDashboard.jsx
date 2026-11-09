@@ -9,7 +9,8 @@ export default function AdminDashboard() {
 
   const fetchProducts = async () => {
     try {
-      const res = await API.get('/products');
+      // ശരിയാക്കിയത്: /products എന്നത് /api/products ആക്കി
+      const res = await API.get('/api/products');
       setProducts(res.data);
     } catch (err) {
       console.error(err);
@@ -25,7 +26,6 @@ export default function AdminDashboard() {
     fetchProducts();
   }, [navigate]);
 
-  // ഫോണിൽ നിന്നോ ലാപ്ടോപ്പിൽ നിന്നോ ഫോട്ടോ സെലക്ട് ചെയ്യുമ്പോൾ അത് ഇമേജ് ലിങ്ക് (Base64) ആക്കി മാറ്റുന്നു
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -40,7 +40,8 @@ export default function AdminDashboard() {
   const handleAddProduct = async (e) => {
     e.preventDefault();
     try {
-      await API.post('/products', form);
+      // ശരിയാക്കിയത്: /products എന്നത് /api/products ആക്കി
+      await API.post('/api/products', form);
       setForm({ name: '', category: 'rudraksha', price: '', originalPrice: '', image: '', description: '', tag: '' });
       fetchProducts();
       alert('Product added successfully!');
@@ -52,7 +53,8 @@ export default function AdminDashboard() {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
-        await API.delete(`/products/${id}`);
+        // ശരിയാക്കിയത്: /products/${id} എന്നത് /api/products/${id} ആക്കി
+        await API.delete(`/api/products/${id}`);
         fetchProducts();
       } catch (err) {
         alert('Failed to delete');
@@ -92,7 +94,6 @@ export default function AdminDashboard() {
               <input type="number" placeholder="Original Price" value={form.originalPrice} onChange={e => setForm({...form, originalPrice: e.target.value})} className="bg-[#0A0807] border border-stone-800 p-2.5 rounded text-sm" />
             </div>
             
-            {/* ഇവിടെയാണ് ലിങ്കിന് പകരം ഫോണിൽ നിന്ന് ഫോട്ടോ സെലക്ട് ചെയ്യുന്ന ഫയൽ ഇൻപുട്ട് കൊടുത്തത് */}
             <div className="space-y-1">
               <label className="text-xs text-stone-400">Select Product Image (Phone/PC)</label>
               <input 
