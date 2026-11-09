@@ -25,6 +25,18 @@ export default function AdminDashboard() {
     fetchProducts();
   }, [navigate]);
 
+  // ഫോണിൽ നിന്നോ ലാപ്ടോപ്പിൽ നിന്നോ ഫോട്ടോ സെലക്ട് ചെയ്യുമ്പോൾ അത് ഇമേജ് ലിങ്ക് (Base64) ആക്കി മാറ്റുന്നു
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      setForm({ ...form, image: reader.result });
+    };
+  };
+
   const handleAddProduct = async (e) => {
     e.preventDefault();
     try {
@@ -79,7 +91,19 @@ export default function AdminDashboard() {
               <input type="number" placeholder="Price (₹)" value={form.price} onChange={e => setForm({...form, price: e.target.value})} className="bg-[#0A0807] border border-stone-800 p-2.5 rounded text-sm" required />
               <input type="number" placeholder="Original Price" value={form.originalPrice} onChange={e => setForm({...form, originalPrice: e.target.value})} className="bg-[#0A0807] border border-stone-800 p-2.5 rounded text-sm" />
             </div>
-            <input type="text" placeholder="Image URL" value={form.image} onChange={e => setForm({...form, image: e.target.value})} className="w-full bg-[#0A0807] border border-stone-800 p-2.5 rounded text-sm" required />
+            
+            {/* ഇവിടെയാണ് ലിങ്കിന് പകരം ഫോണിൽ നിന്ന് ഫോട്ടോ സെലക്ട് ചെയ്യുന്ന ഫയൽ ഇൻപുട്ട് കൊടുത്തത് */}
+            <div className="space-y-1">
+              <label className="text-xs text-stone-400">Select Product Image (Phone/PC)</label>
+              <input 
+                type="file" 
+                accept="image/*" 
+                onChange={handleImageChange} 
+                className="w-full bg-[#0A0807] border border-stone-800 p-2 rounded text-xs text-stone-300 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-[#D4AF37] file:text-[#0A0807] hover:file:bg-[#e6c158]" 
+                required 
+              />
+            </div>
+
             <input type="text" placeholder="Tag (e.g. Best Seller)" value={form.tag} onChange={e => setForm({...form, tag: e.target.value})} className="w-full bg-[#0A0807] border border-stone-800 p-2.5 rounded text-sm" />
             <textarea placeholder="Description" value={form.description} onChange={e => setForm({...form, description: e.target.value})} className="w-full bg-[#0A0807] border border-stone-800 p-2.5 rounded text-sm" rows="3" />
             <button type="submit" className="w-full bg-[#D4AF37] text-[#0A0807] font-semibold py-2.5 rounded hover:bg-[#e6c158] transition">Add Product</button>
