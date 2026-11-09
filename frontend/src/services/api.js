@@ -1,8 +1,10 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://sreerudra-1.onrender.com',
 });
+
+
 
 // Automatically attach admin token if available in localStorage
 API.interceptors.request.use((req) => {
@@ -11,6 +13,5 @@ API.interceptors.request.use((req) => {
     req.headers.Authorization = `Bearer ${token}`;
   }
   return req;
-});
-
+})
 export default API;
