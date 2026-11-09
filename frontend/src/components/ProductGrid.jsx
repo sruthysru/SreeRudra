@@ -46,7 +46,7 @@ export default function ProductGrid({ onAddToCart }) {
   };
 
   const handleWhatsAppOrder = (product) => {
-    const phoneNumber = "919495290188"; 
+    const phoneNumber = "918891241035"; 
     const message = `Namaste, I want to order this sacred item:\n*Name:* ${product.name}\n*Price:* ₹${product.price}\n*Category:* ${product.category}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = url;

@@ -10,7 +10,7 @@ function Storefront() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
 
-  const WHATSAPP_NUMBER = "919495290188";
+  const WHATSAPP_NUMBER = "918891241035";
 
   // പ്രൊഡക്റ്റ് കൃത്യമായി ഐഡി നോക്കി കാർട്ടിൽ ആഡ് ചെയ്യാൻ
   const handleAddToCart = (product) => {
@@ -69,7 +69,7 @@ function Storefront() {
 
       {/* Top Announcement Bar */}
       <div className="bg-gradient-to-r from-[#8C621D] via-[#C59A45] to-[#8C621D] text-[#120F0D] text-xs font-semibold py-2 px-4 text-center tracking-widest uppercase">
-        ⚡ Express Worldwide Shipping &nbsp;|&nbsp; 🕉️ Authenticity Guaranteed & 100% Energized Bracelets
+        ⚡ Express Worldwide Shipping &nbsp;|&nbsp; 🕉️ Authenticity Guaranteed
       </div>
 
       {/* Header & Navigation */}
@@ -176,11 +176,11 @@ function Storefront() {
           <div className="relative flex justify-center">
             <div className="relative w-full max-w-md aspect-square rounded-2xl p-1 bg-gradient-to-tr from-[#B28230]/40 via-[#D97745]/20 to-transparent">
               <div className="w-full h-full rounded-2xl overflow-hidden bg-[#1C1814] relative group">
-                <img src="https://images.unsplash.com/photo-1611591475140-43a743419250?auto=format&fit=crop&w=800&q=80" alt="Sreerudra Sacred Bracelet" className="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out" />
+                <img src="/src/assets/Hakik+Black Agate.png" alt="Sreerudra Sacred Bracelet" className="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-out" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#120F0D] via-transparent to-transparent opacity-80"></div>
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-[#120F0D]/80 backdrop-blur-md border border-[#C59A45]/30">
                   <span className="text-xs text-[#C59A45] uppercase tracking-widest block font-medium">Signature Creation</span>
-                  <span className="text-lg font-cinzel font-semibold text-white">Mahadeva Panchamukhi Rudraksha</span>
+                  <span className="text-lg font-cinzel font-semibold text-white">Hakik + Black Agate</span>
                 </div>
               </div>
             </div>
@@ -236,8 +236,8 @@ function Storefront() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Sacred Beads" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full shadow-lg" />
-              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Jewelry Design" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full mt-8 shadow-lg" />
+              <img src="/src/assets/Golden Hamatite.jpeg" alt="Sacred Beads" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full shadow-lg" />
+              <img src="/src/assets/Lava Stone.jpeg" alt="Jewelry Design" className="rounded-xl border border-[#C59A45]/20 object-cover h-64 w-full mt-8 shadow-lg" />
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ function Storefront() {
                 BY NANDU
               </span>
               <p className="text-stone-400 text-xs leading-relaxed font-light">
-                Authentic energized spiritual bracelets, malas, and sacred gemstone jewelry curated for inner transformation, protection, and peace.
+                Authentic energized spiritual bracelets for inner transformation, protection, and peace.
               </p>
             </div>
             <div className="space-y-3">
@@ -298,14 +298,7 @@ function Storefront() {
                 <li><a href="#collection" className="hover:text-[#E5CB92] transition">Gemstone Energy Malas</a></li>
               </ul>
             </div>
-            <div className="space-y-3">
-              <h4 className="font-cinzel text-white text-sm font-semibold uppercase tracking-wider">Sacred Care</h4>
-              <p className="text-stone-400 text-xs leading-relaxed">
-                • Remove during bathing or swimming.<br />
-                • Clean gently with soft natural oil (sandalwood/sesame) monthly.<br />
-                • Re-energize in morning sunlight or under incense smoke.
-              </p>
-            </div>
+            
             <div className="space-y-3">
               <h4 className="font-cinzel text-white text-sm font-semibold uppercase tracking-wider">Connect & Order</h4>
               <p className="text-stone-400 text-xs">For personalized astrological advice & custom sizes:</p>

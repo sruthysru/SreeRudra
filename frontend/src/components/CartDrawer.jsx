@@ -17,7 +17,7 @@ export default function CartDrawer({ isOpen, onClose, cart, onRemoveFromCart }) 
     message += `%0A*Total Amount: ₹${totalPrice}*%0A%0APlease confirm my order!`;
 
     // Replace with your actual WhatsApp business/personal number (with country code, e.g., 919876543210)
-    const phoneNumber = "919495290188"; 
+    const phoneNumber = "918891241035"; 
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
