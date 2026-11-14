@@ -25,9 +25,10 @@ export default function ProductGrid({ onAddToCart }) {
   const categories = [
     { id: 'all', label: 'All Sacred Items' },
     { id: 'rudraksha', label: 'Rudraksha' },
-    { id: 'ebony', label: 'Karungali / Ebony' },
-    { id: 'gemstone', label: 'Healing Gemstones' },
-    { id: 'tulsi', label: 'Tulsi Mala' }
+    { id: 'ebony', label: 'Karungali' },
+    { id: 'gemstone', label: 'Rosery' },
+    { id: 'redsandel', label: 'Red Sandel'},
+    { id: 'tulsi', label: 'Tulsi' }
   ];
 
   const filteredProducts = activeCategory === 'all' 
