@@ -62,7 +62,7 @@ export default function ProductGrid({ onAddToCart }) {
   }
 
   return (
-    <section id="collection" className="py-12 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
+    <section id="collection" className="py-8 md:py-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
       {/* Section Header */}
       <div className="flex flex-col items-center text-center mb-8 md:mb-10 gap-4 md:gap-6">
         <div>

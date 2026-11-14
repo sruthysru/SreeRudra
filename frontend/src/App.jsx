@@ -75,13 +75,21 @@ function Storefront() {
       {/* Header & Navigation */}
       <header className="sticky top-0 z-40 bg-[#120F0D]/90 backdrop-blur-md border-b border-[#C59A45]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <Link to="/" className="flex flex-col items-start group">
-            <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-widest bg-gradient-to-r from-[#FAF4E5] via-[#E5CB92] to-[#B28230] bg-clip-text text-transparent">
-              SREERUDRA
-            </span>
-            <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-[#E5CB92]/80 -mt-1 font-sans">
-              BY NANDU
-            </span>
+          {/* Logo and Brand Name */}
+          <Link to="/" className="flex items-center gap-3 group">
+            <img 
+               src="/images/logo.jpeg" 
+               alt="Sreerudra Logo" 
+               className="w-10 h-10 sm:w-12 sm:h-12 object-cover rounded-full border border-[#C59A45]/40" 
+            />
+           <div className="flex flex-col items-start">
+              <span className="font-cinzel text-xl sm:text-2xl font-bold tracking-widest bg-gradient-to-r from-[#FAF4E5] via-[#E5CB92] to-[#B28230] bg-clip-text text-transparent">
+                SREERUDRA
+              </span>
+              <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-[#E5CB92]/80 -mt-1 font-sans">
+                BY NANDU
+              </span>
+            </div>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
@@ -134,11 +142,29 @@ function Storefront() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="relative py-20 lg:py-28 overflow-hidden flex items-center" style={{ backgroundImage: 'radial-gradient(#c59a45 0.75px, transparent 0.75px), radial-gradient(#c59a45 0.75px, #0a0807 0.75px)', backgroundSize: '30px 30px' }}>
+      <section id="hero" className="relative py-10 lg:py-18 overflow-hidden flex items-center" style={{ backgroundImage: 'radial-gradient(#c59a45 0.75px, transparent 0.75px), radial-gradient(#c59a45 0.75px, #0a0807 0.75px)', backgroundSize: '30px 30px' }}>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#120F0D]/80 to-[#0A0807] pointer-events-none"></div>
-
+          
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left space-y-6">
+            {/*<div>
+              <img src="/images/logo.jpeg" style={{height:150}} />
+            </div>*/}
+            <Link to="/" className="flex items-center gap-15 group">
+              <img 
+               src="/images/logo.jpeg" 
+               alt="Sreerudra Logo" 
+               className="w-10 h-10 sm:w-62 sm:h-62 object-cover rounded-full border border-[#C59A45]/40" 
+              />
+              <div className="flex flex-col items-start">
+                <span className="font-cinzel text-xl sm:text-4xl lg:text-6xl font-bold tracking-widest bg-gradient-to-r from-[#FAF4E5] via-[#E5CB92] to-[#B28230] bg-clip-text text-transparent">
+                SREERUDRA
+                </span>
+                <span className="text-[10px] sm:text-1xl lg:text-3xl tracking-[0.3em] uppercase text-[#E5CB92]/80 -mt-1 font-sans">
+                BY NANDU
+                </span>
+              </div>
+            </Link>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#C59A45]/10 border border-[#C59A45]/30 text-[#E5CB92] text-xs font-semibold uppercase tracking-wider">
               <i className="fa-solid fa-om text-[#C59A45]"></i> Energized Spiritual Adornments
             </div>
